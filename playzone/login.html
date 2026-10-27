@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar - Play Zone</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth">
+  <main class="caixa">
+    <a class="voltar" href="index.html" aria-label="Voltar">←</a>
+    <div class="logo">🎮 Play <span>Zone</span></div>
+    <h1>Entrar</h1>
+    <p class="sub">Acesse sua conta</p>
+    <!-- action e method: o integrante do C define para onde os dados vão -->
+    <form action="/login" method="post">
+      <div class="campo">
+        <label for="usuario">E-mail ou nome de usuário</label>
+        <input id="usuario" name="usuario" type="text" placeholder="exemplo@email.com" required>
+      </div>
+      <!-- Para mostrar o erro: adicionar a classe "invalido" em .campo -->
+      <div class="campo">
+        <label for="senha">Senha</label>
+        <input id="senha" name="senha" type="password" placeholder="Digite sua senha" required>
+        <p class="msg-erro">⚠ Senha incorreta. Tente novamente.</p>
+      </div>
+      <div class="linha">
+        <label><input type="checkbox" name="lembrar" checked> Lembrar de mim</label>
+        <a href="recuperar.html">Esqueceu a senha?</a>
+      </div>
+      <button class="btn" type="submit">Entrar</button>
+    </form>
+    <p class="rodape">Ainda não tem uma conta? <a href="cadastro.html">Criar conta</a></p>
+  </main>
+</body>
+</html>

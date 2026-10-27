@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Criar conta - Play Zone</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth">
+  <main class="caixa">
+    <a class="voltar" href="index.html" aria-label="Voltar">←</a>
+    <div class="logo">🎮 Play <span>Zone</span></div>
+    <h1>Criar conta</h1>
+    <p class="sub">É rápido e fácil!</p>
+    <form action="/cadastro" method="post">
+      <div class="campo">
+        <label for="nome">Nome de usuário</label>
+        <input id="nome" name="nome" type="text" placeholder="ex.: jogador123" required>
+      </div>
+      <div class="campo">
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" placeholder="exemplo@email.com" required>
+      </div>
+      <div class="campo">
+        <label for="senha">Senha</label>
+        <input id="senha" name="senha" type="password" placeholder="Digite sua senha" required>
+      </div>
+      <div class="linha">
+        <label><input type="checkbox" name="termos" required> <span>Concordo com os <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a></span></label>
+      </div>
+      <button class="btn" type="submit">Criar conta</button>
+    </form>
+    <p class="rodape">Já tem uma conta? <a href="login.html">Entrar</a></p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recuperar senha - Play Zone</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth">
+  <main class="caixa">
+    <a class="voltar" href="login.html" aria-label="Voltar">←</a>
+    <div class="logo">🎮 Play <span>Zone</span></div>
+    <h1>Recuperar senha</h1>
+    <p class="sub">Digite seu e-mail para receber um link de redefinição de senha.</p>
+    <form action="/recuperar" method="post">
+      <div class="campo">
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" placeholder="exemplo@email.com" required>
+      </div>
+      <button class="btn" type="submit">Enviar link</button>
+    </form>
+    <p class="rodape"><a href="login.html">‹ Voltar para o login</a></p>
+  </main>
+</body>
+</html>
